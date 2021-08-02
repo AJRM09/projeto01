@@ -24,11 +24,11 @@ public class TestaAluno {
      String sobrenome = JOptionPane.showInputDialog("Digite sobrenome");
      aluno.setsobrenome(sobrenome);
      
-     String idade = JOptionPane.showInputDialog("Digite sobrenome");
-     aluno.setsobrenome(idade);
+     String idade = JOptionPane.showInputDialog("Digite idade");
+     aluno.setIdade(idade);
      
       
-     System.out.println("Nome:" + aluno.getNome() + " " + aluno.getsobrenome() );
+     System.out.println("Nome:" + aluno.getNome() + " " + aluno.getsobrenome() + "\nIdade: " + aluno.getIdade(idade));
      
     
      
