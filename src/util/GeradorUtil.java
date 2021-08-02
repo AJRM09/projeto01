@@ -17,9 +17,10 @@ public class GeradorUtil {
     
     }
     public static void main(String[] args) {
-        GeradorUtil objetoDeClasse = new GeradorUtil();
+        GeradorUtil objetoDessaClasse = new GeradorUtil();
+        System.out.println("Salário: " + objetoDessaClasse.gerarSalario());
 //       
-//            System.out.println("Salario" + objetoDessaClasse.gerarSalario());
+//           
     }
     
   }
