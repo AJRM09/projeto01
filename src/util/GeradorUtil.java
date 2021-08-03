@@ -11,14 +11,44 @@ package util;
  */
 public class GeradorUtil {
     
-    public double gerarSalario(){
-        int numero = (int) (Math.random() * 100000);
-        return numero; 
+    /**
+     * Retorna um valor String conforme a quantidade de numero solicitado. 
+     * @param qtde
+     * @return 
+     */
     
+   public String gerarNumero(int qtde) {
+         String senha = "";
+         int numero;
+         for(int i = 0; i < qtde; i++){
+             
+             numero = (int)(Math.random() * 10);
+             senha = senha + numero;
+        }
+         return senha;
+         
     }
+   
+   public String gerarCpf (){
+       return gerarNumero(3) + "."+ gerarNumero(3) + "." + gerarNumero(3) + "."
+               + gerarNumero(2);
+       
+      
+   }
+   
+   public double gerarSalario(){
+        int numero = (int) (Math.random() * 100000);
+     return numero; 
+    
+  }
+      
     public static void main(String[] args) {
-        GeradorUtil objetoDessaClasse = new GeradorUtil();
-        System.out.println("Salário: " + objetoDessaClasse.gerarSalario());
+        GeradorUtil util = new GeradorUtil();
+       String cpf = util.gerarCpf();
+        System.out.println("CPF :" + cpf);
+   
+
+//        System.out.println("Salário: " + objetoDessaClasse.gerarSalario());
 //       
 //           
     }
